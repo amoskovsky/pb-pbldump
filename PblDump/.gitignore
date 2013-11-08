@@ -1,0 +1,10 @@
+Debug
+Release
+*.plg
+*.obj
+*.exe
+*.dll
+*.aps
+*.dep
+*.mak
+

@@ -1,0 +1,18 @@
+;To enable browsing in PBL/PBD in the FAR panels include content of this
+;file to the "c:\program files\far\plugins\multiarc\formats\custom.ini" file
+;having removed any older [PBL] section from there,
+;then place PBLDUMP.EXE in any directory from the %PATH% variable
+;and reload the FAR
+
+
+[PBL]
+;Powerbuilder library format (*.pbl, *.pbd)
+ID=48 44 52 2A
+IDOnly=1
+Extension=pbl
+List="pbldump -v"
+ExtractWithoutPath=pbldump -eta %%A @%%L
+Errorlevel=1
+Start="^--"
+End="^--"
+Format0="nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnzzzzzzzzz dd tt yyyy hh mm ss"
