@@ -50,11 +50,6 @@ BSC32=bscmake.exe
 LIB32=link.exe -lib
 # ADD BASE LIB32 /nologo
 # ADD LIB32 /nologo
-# Begin Special Build Tool
-SOURCE="$(InputPath)"
-PostBuild_Desc=Build Perl
-PostBuild_Cmds=buildperl.cmd
-# End Special Build Tool
 
 !ELSEIF  "$(CFG)" == "PbLMI - Win32 Debug"
 
